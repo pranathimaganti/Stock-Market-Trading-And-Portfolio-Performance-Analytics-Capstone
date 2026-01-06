@@ -1,0 +1,1210 @@
+[2026-01-05T17:17:43.861+0000] {processor.py:186} INFO - Started process (PID=115) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:17:43.866+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:17:43.879+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:17:43.878+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:17:44.050+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:17:44.017+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:17:44.066+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:17:44.109+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.282 seconds
+[2026-01-05T17:18:14.790+0000] {processor.py:186} INFO - Started process (PID=182) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:18:14.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:18:14.795+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:18:14.795+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:18:14.852+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:18:14.844+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:18:14.854+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:18:14.866+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.082 seconds
+[2026-01-05T17:18:45.450+0000] {processor.py:186} INFO - Started process (PID=248) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:18:45.452+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:18:45.457+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:18:45.456+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:18:45.517+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:18:45.507+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:18:45.520+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:18:45.532+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.089 seconds
+[2026-01-05T17:19:16.092+0000] {processor.py:186} INFO - Started process (PID=314) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:19:16.093+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:19:16.100+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:19:16.098+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:19:16.176+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:19:16.163+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:19:16.179+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:19:16.198+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.129 seconds
+[2026-01-05T17:19:46.821+0000] {processor.py:186} INFO - Started process (PID=380) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:19:46.823+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:19:46.830+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:19:46.829+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:19:46.917+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:19:46.907+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:19:46.922+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:19:46.937+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.129 seconds
+[2026-01-05T17:20:17.202+0000] {processor.py:186} INFO - Started process (PID=446) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:20:17.203+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:20:17.207+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:20:17.207+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:20:17.250+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:20:17.242+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:20:17.252+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:20:17.262+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.066 seconds
+[2026-01-05T17:20:48.134+0000] {processor.py:186} INFO - Started process (PID=512) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:20:48.136+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:20:48.144+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:20:48.143+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:20:48.238+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:20:48.226+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:20:48.243+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:20:48.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.140 seconds
+[2026-01-05T17:21:18.476+0000] {processor.py:186} INFO - Started process (PID=578) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:21:18.478+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:21:18.482+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:21:18.482+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:21:18.565+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:21:18.551+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:21:18.568+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:21:18.585+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.118 seconds
+[2026-01-05T17:21:48.791+0000] {processor.py:186} INFO - Started process (PID=644) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:21:48.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:21:48.796+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:21:48.795+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:21:48.849+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:21:48.839+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:21:48.853+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:21:48.868+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.084 seconds
+[2026-01-05T17:22:19.714+0000] {processor.py:186} INFO - Started process (PID=710) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:22:19.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:22:19.720+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:22:19.720+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:22:19.782+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:22:19.771+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:22:19.785+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:22:19.797+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.093 seconds
+[2026-01-05T17:22:50.509+0000] {processor.py:186} INFO - Started process (PID=776) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:22:50.510+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:22:50.514+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:22:50.514+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:22:50.578+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:22:50.568+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:22:50.582+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:22:50.595+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.096 seconds
+[2026-01-05T17:23:21.465+0000] {processor.py:186} INFO - Started process (PID=842) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:23:21.466+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:23:21.469+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:23:21.469+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:23:21.522+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:23:21.511+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:23:21.525+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:23:21.539+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.083 seconds
+[2026-01-05T17:23:51.772+0000] {processor.py:186} INFO - Started process (PID=908) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:23:51.773+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:23:51.778+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:23:51.777+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:23:51.821+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:23:51.814+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:23:51.824+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:23:51.837+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.076 seconds
+[2026-01-05T17:24:22.189+0000] {processor.py:186} INFO - Started process (PID=974) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:24:22.191+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:24:22.195+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:24:22.194+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:24:22.256+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:24:22.248+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:24:22.258+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:24:22.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.088 seconds
+[2026-01-05T17:24:52.709+0000] {processor.py:186} INFO - Started process (PID=1040) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:24:52.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:24:52.715+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:24:52.715+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:24:52.768+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:24:52.759+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:24:52.770+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:24:52.788+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.089 seconds
+[2026-01-05T17:25:23.826+0000] {processor.py:186} INFO - Started process (PID=1106) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:25:23.828+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:25:23.831+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:25:23.831+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:25:23.882+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:25:23.876+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:25:23.885+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:25:23.899+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.081 seconds
+[2026-01-05T17:25:54.986+0000] {processor.py:186} INFO - Started process (PID=1172) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:25:54.988+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:25:54.991+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:25:54.991+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:25:55.053+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:25:55.043+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:25:55.056+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:25:55.071+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.092 seconds
+[2026-01-05T17:26:25.413+0000] {processor.py:186} INFO - Started process (PID=1238) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:26:25.415+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:26:25.420+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:26:25.419+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:26:25.486+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:26:25.473+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:26:25.490+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:26:25.502+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.099 seconds
+[2026-01-05T17:26:55.651+0000] {processor.py:186} INFO - Started process (PID=1304) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:26:55.652+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:26:55.656+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:26:55.655+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:26:55.700+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:26:55.690+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:26:55.704+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:26:55.716+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.072 seconds
+[2026-01-05T17:27:25.944+0000] {processor.py:186} INFO - Started process (PID=1370) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:27:25.946+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:27:25.948+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:27:25.948+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:27:26.011+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:27:25.999+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:27:26.014+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:27:26.028+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.091 seconds
+[2026-01-05T17:27:56.650+0000] {processor.py:186} INFO - Started process (PID=1436) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:27:56.656+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:27:56.664+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:27:56.663+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:27:56.893+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:27:56.855+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:27:56.901+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:27:56.957+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.322 seconds
+[2026-01-05T17:28:27.278+0000] {processor.py:186} INFO - Started process (PID=1502) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:28:27.279+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:28:27.282+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:28:27.282+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:28:27.332+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:28:27.324+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:28:27.334+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:28:27.350+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.083 seconds
+[2026-01-05T17:28:57.912+0000] {processor.py:186} INFO - Started process (PID=1568) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:28:57.915+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:28:57.919+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:28:57.918+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:28:57.973+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:28:57.965+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:28:57.975+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:28:57.992+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.093 seconds
+[2026-01-05T17:29:28.610+0000] {processor.py:186} INFO - Started process (PID=1640) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:29:28.612+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:29:28.616+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:29:28.615+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:29:28.687+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:29:28.676+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:29:28.690+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:29:28.704+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.105 seconds
+[2026-01-05T17:29:58.940+0000] {processor.py:186} INFO - Started process (PID=1706) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:29:58.941+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:29:58.944+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:29:58.944+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:29:58.995+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:29:58.986+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:29:58.997+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:29:59.006+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.076 seconds
+[2026-01-05T17:30:29.774+0000] {processor.py:186} INFO - Started process (PID=1773) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:30:29.776+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:30:29.779+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:30:29.779+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:30:29.832+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:30:29.821+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:30:29.834+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:30:29.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.080 seconds
+[2026-01-05T17:31:00.412+0000] {processor.py:186} INFO - Started process (PID=1839) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:31:00.414+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:31:00.418+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:31:00.417+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:31:00.464+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:31:00.456+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:31:00.466+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:31:00.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.083 seconds
+[2026-01-05T17:31:30.980+0000] {processor.py:186} INFO - Started process (PID=1905) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:31:30.982+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:31:30.987+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:31:30.986+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:31:31.055+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:31:31.043+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:31:31.058+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:31:31.073+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.099 seconds
+[2026-01-05T17:32:01.269+0000] {processor.py:186} INFO - Started process (PID=1971) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:32:01.271+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:32:01.275+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:32:01.275+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:32:01.348+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:32:01.337+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:32:01.352+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:32:01.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.106 seconds
+[2026-01-05T17:32:31.437+0000] {processor.py:186} INFO - Started process (PID=2036) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:32:31.438+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:32:31.442+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:32:31.442+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:32:31.493+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:32:31.483+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:32:31.497+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:32:31.510+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.079 seconds
+[2026-01-05T17:33:02.035+0000] {processor.py:186} INFO - Started process (PID=2103) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:33:02.037+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:33:02.040+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:33:02.040+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:33:02.090+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:33:02.082+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:33:02.093+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:33:02.109+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.082 seconds
+[2026-01-05T17:33:32.322+0000] {processor.py:186} INFO - Started process (PID=2169) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:33:32.323+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:33:32.328+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:33:32.328+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:33:32.383+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:33:32.376+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:33:32.386+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:33:32.399+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.085 seconds
+[2026-01-05T17:34:03.373+0000] {processor.py:186} INFO - Started process (PID=2235) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:34:03.375+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:34:03.379+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:34:03.378+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:34:03.428+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:34:03.420+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:34:03.430+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:34:03.444+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.079 seconds
+[2026-01-05T17:34:33.811+0000] {processor.py:186} INFO - Started process (PID=2301) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:34:33.813+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:34:33.817+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:34:33.816+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:34:33.897+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:34:33.884+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:34:33.902+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:34:33.921+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.120 seconds
+[2026-01-05T17:35:04.700+0000] {processor.py:186} INFO - Started process (PID=2367) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:35:04.702+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:35:04.704+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:35:04.704+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:35:04.742+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:35:04.737+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:35:04.744+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:35:04.760+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.067 seconds
+[2026-01-05T17:35:35.487+0000] {processor.py:186} INFO - Started process (PID=2434) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:35:35.489+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:35:35.493+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:35:35.492+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:35:35.562+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:35:35.554+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:35:35.565+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:35:35.578+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.098 seconds
+[2026-01-05T17:36:06.206+0000] {processor.py:186} INFO - Started process (PID=2500) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:36:06.209+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:36:06.215+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:36:06.213+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:36:06.281+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:36:06.258+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:36:06.286+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:36:06.302+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.107 seconds
+[2026-01-05T17:36:36.948+0000] {processor.py:186} INFO - Started process (PID=2566) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:36:36.949+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:36:36.953+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:36:36.952+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:36:37.016+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:36:37.006+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:36:37.019+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:36:37.039+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.100 seconds
+[2026-01-05T17:37:07.179+0000] {processor.py:186} INFO - Started process (PID=2631) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:37:07.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:37:07.184+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:37:07.183+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:37:07.250+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:37:07.242+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:37:07.254+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:37:07.266+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.094 seconds
+[2026-01-05T17:37:37.885+0000] {processor.py:186} INFO - Started process (PID=2698) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:37:37.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:37:37.894+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:37:37.893+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:37:37.971+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:37:37.960+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:37:37.975+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:37:37.991+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.122 seconds
+[2026-01-05T17:38:08.445+0000] {processor.py:186} INFO - Started process (PID=2764) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:38:08.446+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:38:08.449+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:38:08.448+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:38:08.499+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:38:08.490+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:38:08.502+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:38:08.513+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.078 seconds
+[2026-01-05T17:38:39.134+0000] {processor.py:186} INFO - Started process (PID=2830) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:38:39.135+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:38:39.140+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:38:39.139+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:38:39.190+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:38:39.182+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:38:39.192+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:38:39.207+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.082 seconds
+[2026-01-05T17:39:10.195+0000] {processor.py:186} INFO - Started process (PID=2896) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:39:10.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:39:10.202+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:39:10.201+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:39:10.252+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:39:10.244+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:39:10.255+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:39:10.270+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.081 seconds
+[2026-01-05T17:39:40.833+0000] {processor.py:186} INFO - Started process (PID=2962) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:39:40.836+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:39:40.840+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:39:40.840+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:39:40.912+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:39:40.901+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:39:40.916+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:39:40.931+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.106 seconds
+[2026-01-05T17:40:11.300+0000] {processor.py:186} INFO - Started process (PID=3028) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:40:11.302+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:40:11.305+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:40:11.304+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:40:11.353+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:40:11.343+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:40:11.355+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:40:11.368+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.074 seconds
+[2026-01-05T17:40:41.559+0000] {processor.py:186} INFO - Started process (PID=3094) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:40:41.560+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:40:41.564+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:40:41.563+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:40:41.611+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:40:41.604+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:40:41.613+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:40:41.631+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.084 seconds
+[2026-01-05T17:41:11.824+0000] {processor.py:186} INFO - Started process (PID=3160) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:41:11.826+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:41:11.831+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:41:11.830+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:41:11.895+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:41:11.884+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:41:11.897+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:41:11.911+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.098 seconds
+[2026-01-05T17:41:42.129+0000] {processor.py:186} INFO - Started process (PID=3226) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:41:42.131+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:41:42.135+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:41:42.134+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:41:42.198+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:41:42.189+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:41:42.200+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:41:42.217+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.098 seconds
+[2026-01-05T17:42:12.521+0000] {processor.py:186} INFO - Started process (PID=3292) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:42:12.523+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:42:12.528+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:42:12.527+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:42:12.583+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:42:12.575+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:42:12.587+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:42:12.601+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.092 seconds
+[2026-01-05T17:42:42.793+0000] {processor.py:186} INFO - Started process (PID=3358) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:42:42.795+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:42:42.799+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:42:42.799+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:42:42.849+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:42:42.842+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:42:42.852+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:42:42.866+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.083 seconds
+[2026-01-05T17:43:13.268+0000] {processor.py:186} INFO - Started process (PID=3424) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:43:13.270+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:43:13.274+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:43:13.274+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:43:13.322+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:43:13.315+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:43:13.324+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:43:13.339+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.081 seconds
+[2026-01-05T17:43:43.482+0000] {processor.py:186} INFO - Started process (PID=3490) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:43:43.483+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:43:43.488+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:43:43.487+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:43:43.538+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:43:43.530+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:43:43.540+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:43:43.557+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.084 seconds
+[2026-01-05T17:44:14.290+0000] {processor.py:186} INFO - Started process (PID=3556) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:44:14.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:44:14.296+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:44:14.295+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:44:14.348+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:44:14.339+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:44:14.350+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:44:14.367+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.086 seconds
+[2026-01-05T17:44:44.788+0000] {processor.py:186} INFO - Started process (PID=3623) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:44:44.790+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:44:44.795+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:44:44.794+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:44:44.841+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:44:44.833+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:44:44.843+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:44:44.858+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.079 seconds
+[2026-01-05T17:45:15.446+0000] {processor.py:186} INFO - Started process (PID=3688) to work on /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:45:15.448+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/shopverse_daily_pipeline.py for tasks to queue
+[2026-01-05T17:45:15.455+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:45:15.453+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:45:15.514+0000] {logging_mixin.py:190} INFO - [2026-01-05T17:45:15.505+0000] {dagbag.py:386} ERROR - Failed to import: /opt/airflow/dags/shopverse_daily_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 382, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 239, in <module>
+    pipeline = shopverse_daily_pipeline()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dag.py", line 4265, in factory
+    f(**f_kwargs)
+  File "/opt/airflow/dags/shopverse_daily_pipeline.py", line 27, in shopverse_daily_pipeline
+    base_path = Variable.get("shopverse_data_base_path")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/variable.py", line 145, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable shopverse_data_base_path does not exist'
+[2026-01-05T17:45:15.516+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/shopverse_daily_pipeline.py
+[2026-01-05T17:45:15.532+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/shopverse_daily_pipeline.py took 0.097 seconds

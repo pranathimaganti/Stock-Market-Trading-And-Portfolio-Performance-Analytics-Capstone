@@ -1,0 +1,31 @@
+[2026-01-04T06:12:25.194+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-04T06:12:25.215+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.bronze_ingestion manual__2026-01-04T06:12:20.914014+00:00 [queued]>
+[2026-01-04T06:12:25.223+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.bronze_ingestion manual__2026-01-04T06:12:20.914014+00:00 [queued]>
+[2026-01-04T06:12:25.225+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2026-01-04T06:12:25.240+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): bronze_ingestion> on 2026-01-04 06:12:20.914014+00:00
+[2026-01-04T06:12:25.250+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=267) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-04T06:12:25.254+0000] {standard_task_runner.py:72} INFO - Started process 269 to run task
+[2026-01-04T06:12:25.254+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'bronze_ingestion', 'manual__2026-01-04T06:12:20.914014+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpw9eduxti']
+[2026-01-04T06:12:25.256+0000] {standard_task_runner.py:105} INFO - Job 12: Subtask bronze_ingestion
+[2026-01-04T06:12:25.352+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.bronze_ingestion manual__2026-01-04T06:12:20.914014+00:00 [running]> on host 3409793214f1
+[2026-01-04T06:12:25.447+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='pranathi2314@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='bronze_ingestion' AIRFLOW_CTX_EXECUTION_DATE='2026-01-04T06:12:20.914014+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-04T06:12:20.914014+00:00'
+[2026-01-04T06:12:25.449+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-04T06:12:25.450+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-04T06:12:25.451+0000] {logging_mixin.py:190} INFO - Current task name:bronze_ingestion state:running start_date:2026-01-04 06:12:25.216615+00:00
+[2026-01-04T06:12:25.452+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-04T06:12:25.453+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-04T06:12:25.454+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-04T06:12:25.456+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/project/Data/Bronze/bronze_layer.py']
+[2026-01-04T06:12:25.469+0000] {subprocess.py:86} INFO - Output:
+[2026-01-04T06:12:26.070+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-04T06:12:26.101+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-04T06:12:26.102+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=bronze_ingestion, run_id=manual__2026-01-04T06:12:20.914014+00:00, execution_date=20260104T061220, start_date=20260104T061225, end_date=20260104T061226
+[2026-01-04T06:12:26.114+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-04T06:12:26.115+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-04T06:12:26.116+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-04 06:12:20.940331+00:00
+[2026-01-04T06:12:26.116+0000] {logging_mixin.py:190} INFO - Task hostname:3409793214f1 operator:BashOperator
+[2026-01-04T06:12:26.156+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-04T06:12:26.188+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-04T06:12:26.191+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

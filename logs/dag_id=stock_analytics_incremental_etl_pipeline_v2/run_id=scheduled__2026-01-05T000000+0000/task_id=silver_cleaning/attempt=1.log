@@ -1,0 +1,219 @@
+[2026-01-06T06:26:49.245+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-06T06:26:49.294+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [queued]>
+[2026-01-06T06:26:49.315+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [queued]>
+[2026-01-06T06:26:49.316+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-01-06T06:26:49.351+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): silver_cleaning> on 2026-01-05 00:00:00+00:00
+[2026-01-06T06:26:49.368+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=124) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-06T06:26:49.372+0000] {standard_task_runner.py:72} INFO - Started process 133 to run task
+[2026-01-06T06:26:49.372+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'silver_cleaning', 'scheduled__2026-01-05T00:00:00+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpozqonk4i']
+[2026-01-06T06:26:49.375+0000] {standard_task_runner.py:105} INFO - Job 31: Subtask silver_cleaning
+[2026-01-06T06:26:49.537+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [running]> on host 069e12759471
+[2026-01-06T06:26:49.844+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='pranathi2314@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='silver_cleaning' AIRFLOW_CTX_EXECUTION_DATE='2026-01-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-05T00:00:00+00:00'
+[2026-01-06T06:26:49.851+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-06T06:26:49.853+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-06T06:26:49.866+0000] {logging_mixin.py:190} INFO - Current task name:silver_cleaning state:running start_date:2026-01-06 06:26:49.296323+00:00
+[2026-01-06T06:26:49.867+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-06T06:26:49.869+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-06T06:26:49.872+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-06T06:26:49.875+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/project/scripts/clean_transform.py']
+[2026-01-06T06:26:49.921+0000] {subprocess.py:86} INFO - Output:
+[2026-01-06T06:26:53.645+0000] {subprocess.py:93} INFO -   transaction_id  trade_date investor_id symbol action  quantity  trade_price
+[2026-01-06T06:26:53.647+0000] {subprocess.py:93} INFO - 0        TXN0001  2022-04-26      INV013   CONS    BUY        62       155.82
+[2026-01-06T06:26:53.648+0000] {subprocess.py:93} INFO - 1        TXN0002  2023-03-10      INV017   ALPH    BUY        60       193.06
+[2026-01-06T06:26:53.649+0000] {subprocess.py:93} INFO - 2        TXN0003  2023-03-07      INV113   PHRM   SELL         6       403.52
+[2026-01-06T06:26:53.651+0000] {subprocess.py:93} INFO - 3        TXN0004  2022-08-10      INV173   BNKX    BUY       102       138.69
+[2026-01-06T06:26:53.652+0000] {subprocess.py:93} INFO - 4        TXN0005  2023-04-17      INV275   BNKX   SELL        25       320.82
+[2026-01-06T06:26:53.656+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2026-01-06T06:26:53.660+0000] {subprocess.py:93} INFO - RangeIndex: 700 entries, 0 to 699
+[2026-01-06T06:26:53.666+0000] {subprocess.py:93} INFO - Data columns (total 7 columns):
+[2026-01-06T06:26:53.668+0000] {subprocess.py:93} INFO -  #   Column          Non-Null Count  Dtype
+[2026-01-06T06:26:53.669+0000] {subprocess.py:93} INFO - ---  ------          --------------  -----
+[2026-01-06T06:26:53.670+0000] {subprocess.py:93} INFO -  0   transaction_id  700 non-null    object
+[2026-01-06T06:26:53.672+0000] {subprocess.py:93} INFO -  1   trade_date      700 non-null    object
+[2026-01-06T06:26:53.673+0000] {subprocess.py:93} INFO -  2   investor_id     700 non-null    object
+[2026-01-06T06:26:53.674+0000] {subprocess.py:93} INFO -  3   symbol          700 non-null    object
+[2026-01-06T06:26:53.676+0000] {subprocess.py:93} INFO -  4   action          689 non-null    object
+[2026-01-06T06:26:53.678+0000] {subprocess.py:93} INFO -  5   quantity        700 non-null    int64
+[2026-01-06T06:26:53.683+0000] {subprocess.py:93} INFO -  6   trade_price     678 non-null    float64
+[2026-01-06T06:26:53.685+0000] {subprocess.py:93} INFO - dtypes: float64(1), int64(1), object(5)
+[2026-01-06T06:26:53.690+0000] {subprocess.py:93} INFO - memory usage: 38.4+ KB
+[2026-01-06T06:26:53.691+0000] {subprocess.py:93} INFO - None
+[2026-01-06T06:26:53.693+0000] {subprocess.py:93} INFO -   transaction_id trade_date investor_id symbol action  quantity  trade_price
+[2026-01-06T06:26:53.694+0000] {subprocess.py:93} INFO - 0        TXN0001 2022-04-26      INV013   CONS    BUY        62       155.82
+[2026-01-06T06:26:53.696+0000] {subprocess.py:93} INFO - 1        TXN0002 2023-03-10      INV017   ALPH    BUY        60       193.06
+[2026-01-06T06:26:53.697+0000] {subprocess.py:93} INFO - 2        TXN0003 2023-03-07      INV113   PHRM   SELL         6       403.52
+[2026-01-06T06:26:53.698+0000] {subprocess.py:93} INFO - 3        TXN0004 2022-08-10      INV173   BNKX    BUY       102       138.69
+[2026-01-06T06:26:53.700+0000] {subprocess.py:93} INFO - 4        TXN0005 2023-04-17      INV275   BNKX   SELL        25       320.82
+[2026-01-06T06:26:53.702+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2026-01-06T06:26:53.704+0000] {subprocess.py:93} INFO - RangeIndex: 700 entries, 0 to 699
+[2026-01-06T06:26:53.706+0000] {subprocess.py:93} INFO - Data columns (total 7 columns):
+[2026-01-06T06:26:53.707+0000] {subprocess.py:93} INFO -  #   Column          Non-Null Count  Dtype
+[2026-01-06T06:26:53.709+0000] {subprocess.py:93} INFO - ---  ------          --------------  -----
+[2026-01-06T06:26:53.710+0000] {subprocess.py:93} INFO -  0   transaction_id  700 non-null    object
+[2026-01-06T06:26:53.711+0000] {subprocess.py:93} INFO -  1   trade_date      700 non-null    datetime64[ns]
+[2026-01-06T06:26:53.712+0000] {subprocess.py:93} INFO -  2   investor_id     700 non-null    object
+[2026-01-06T06:26:53.713+0000] {subprocess.py:93} INFO -  3   symbol          700 non-null    object
+[2026-01-06T06:26:53.714+0000] {subprocess.py:93} INFO -  4   action          689 non-null    object
+[2026-01-06T06:26:53.719+0000] {subprocess.py:93} INFO -  5   quantity        700 non-null    int64
+[2026-01-06T06:26:53.721+0000] {subprocess.py:93} INFO -  6   trade_price     678 non-null    float64
+[2026-01-06T06:26:53.722+0000] {subprocess.py:93} INFO - dtypes: datetime64[ns](1), float64(1), int64(1), object(4)
+[2026-01-06T06:26:53.723+0000] {subprocess.py:93} INFO - memory usage: 38.4+ KB
+[2026-01-06T06:26:53.725+0000] {subprocess.py:93} INFO - None
+[2026-01-06T06:26:53.907+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-06T06:26:54.025+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-06T06:26:54.027+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=silver_cleaning, run_id=scheduled__2026-01-05T00:00:00+00:00, execution_date=20260105T000000, start_date=20260106T062649, end_date=20260106T062654
+[2026-01-06T06:26:54.072+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-06T06:26:54.074+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-06T06:26:54.087+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-06 06:26:02.280601+00:00
+[2026-01-06T06:26:54.088+0000] {logging_mixin.py:190} INFO - Task hostname:069e12759471 operator:BashOperator
+[2026-01-06T06:26:54.123+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-06T06:26:54.242+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-06T06:26:54.264+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2026-01-06T08:15:28.109+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-06T08:15:28.150+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [queued]>
+[2026-01-06T08:15:28.166+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [queued]>
+[2026-01-06T08:15:28.167+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-01-06T08:15:28.187+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): silver_cleaning> on 2026-01-05 00:00:00+00:00
+[2026-01-06T08:15:28.198+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=392) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-06T08:15:28.203+0000] {standard_task_runner.py:72} INFO - Started process 394 to run task
+[2026-01-06T08:15:28.202+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'silver_cleaning', 'scheduled__2026-01-05T00:00:00+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpsh_i63lk']
+[2026-01-06T08:15:28.205+0000] {standard_task_runner.py:105} INFO - Job 50: Subtask silver_cleaning
+[2026-01-06T08:15:28.338+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [running]> on host 744bd50fdfac
+[2026-01-06T08:15:28.465+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='pranathi2314@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='silver_cleaning' AIRFLOW_CTX_EXECUTION_DATE='2026-01-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-05T00:00:00+00:00'
+[2026-01-06T08:15:28.468+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-06T08:15:28.469+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-06T08:15:28.471+0000] {logging_mixin.py:190} INFO - Current task name:silver_cleaning state:running start_date:2026-01-06 08:15:28.151341+00:00
+[2026-01-06T08:15:28.472+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-06T08:15:28.473+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-06T08:15:28.475+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-06T08:15:28.478+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/project/scripts/clean_transform.py']
+[2026-01-06T08:15:28.510+0000] {subprocess.py:86} INFO - Output:
+[2026-01-06T08:15:30.200+0000] {subprocess.py:93} INFO -   transaction_id  trade_date investor_id symbol action  quantity  trade_price
+[2026-01-06T08:15:30.201+0000] {subprocess.py:93} INFO - 0        TXN0001  2022-04-26      INV013   CONS    BUY        62       155.82
+[2026-01-06T08:15:30.202+0000] {subprocess.py:93} INFO - 1        TXN0002  2023-03-10      INV017   ALPH    BUY        60       193.06
+[2026-01-06T08:15:30.203+0000] {subprocess.py:93} INFO - 2        TXN0003  2023-03-07      INV113   PHRM   SELL         6       403.52
+[2026-01-06T08:15:30.204+0000] {subprocess.py:93} INFO - 3        TXN0004  2022-08-10      INV173   BNKX    BUY       102       138.69
+[2026-01-06T08:15:30.205+0000] {subprocess.py:93} INFO - 4        TXN0005  2023-04-17      INV275   BNKX   SELL        25       320.82
+[2026-01-06T08:15:30.206+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2026-01-06T08:15:30.207+0000] {subprocess.py:93} INFO - RangeIndex: 700 entries, 0 to 699
+[2026-01-06T08:15:30.208+0000] {subprocess.py:93} INFO - Data columns (total 7 columns):
+[2026-01-06T08:15:30.209+0000] {subprocess.py:93} INFO -  #   Column          Non-Null Count  Dtype
+[2026-01-06T08:15:30.210+0000] {subprocess.py:93} INFO - ---  ------          --------------  -----
+[2026-01-06T08:15:30.210+0000] {subprocess.py:93} INFO -  0   transaction_id  700 non-null    object
+[2026-01-06T08:15:30.211+0000] {subprocess.py:93} INFO -  1   trade_date      700 non-null    object
+[2026-01-06T08:15:30.212+0000] {subprocess.py:93} INFO -  2   investor_id     700 non-null    object
+[2026-01-06T08:15:30.213+0000] {subprocess.py:93} INFO -  3   symbol          700 non-null    object
+[2026-01-06T08:15:30.213+0000] {subprocess.py:93} INFO -  4   action          689 non-null    object
+[2026-01-06T08:15:30.214+0000] {subprocess.py:93} INFO -  5   quantity        700 non-null    int64
+[2026-01-06T08:15:30.215+0000] {subprocess.py:93} INFO -  6   trade_price     678 non-null    float64
+[2026-01-06T08:15:30.215+0000] {subprocess.py:93} INFO - dtypes: float64(1), int64(1), object(5)
+[2026-01-06T08:15:30.216+0000] {subprocess.py:93} INFO - memory usage: 38.4+ KB
+[2026-01-06T08:15:30.219+0000] {subprocess.py:93} INFO - None
+[2026-01-06T08:15:30.219+0000] {subprocess.py:93} INFO -   transaction_id trade_date investor_id symbol action  quantity  trade_price
+[2026-01-06T08:15:30.220+0000] {subprocess.py:93} INFO - 0        TXN0001 2022-04-26      INV013   CONS    BUY        62       155.82
+[2026-01-06T08:15:30.221+0000] {subprocess.py:93} INFO - 1        TXN0002 2023-03-10      INV017   ALPH    BUY        60       193.06
+[2026-01-06T08:15:30.224+0000] {subprocess.py:93} INFO - 2        TXN0003 2023-03-07      INV113   PHRM   SELL         6       403.52
+[2026-01-06T08:15:30.225+0000] {subprocess.py:93} INFO - 3        TXN0004 2022-08-10      INV173   BNKX    BUY       102       138.69
+[2026-01-06T08:15:30.226+0000] {subprocess.py:93} INFO - 4        TXN0005 2023-04-17      INV275   BNKX   SELL        25       320.82
+[2026-01-06T08:15:30.227+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2026-01-06T08:15:30.227+0000] {subprocess.py:93} INFO - RangeIndex: 700 entries, 0 to 699
+[2026-01-06T08:15:30.228+0000] {subprocess.py:93} INFO - Data columns (total 7 columns):
+[2026-01-06T08:15:30.229+0000] {subprocess.py:93} INFO -  #   Column          Non-Null Count  Dtype
+[2026-01-06T08:15:30.230+0000] {subprocess.py:93} INFO - ---  ------          --------------  -----
+[2026-01-06T08:15:30.230+0000] {subprocess.py:93} INFO -  0   transaction_id  700 non-null    object
+[2026-01-06T08:15:30.231+0000] {subprocess.py:93} INFO -  1   trade_date      700 non-null    datetime64[ns]
+[2026-01-06T08:15:30.232+0000] {subprocess.py:93} INFO -  2   investor_id     700 non-null    object
+[2026-01-06T08:15:30.232+0000] {subprocess.py:93} INFO -  3   symbol          700 non-null    object
+[2026-01-06T08:15:30.233+0000] {subprocess.py:93} INFO -  4   action          689 non-null    object
+[2026-01-06T08:15:30.234+0000] {subprocess.py:93} INFO -  5   quantity        700 non-null    int64
+[2026-01-06T08:15:30.234+0000] {subprocess.py:93} INFO -  6   trade_price     678 non-null    float64
+[2026-01-06T08:15:30.235+0000] {subprocess.py:93} INFO - dtypes: datetime64[ns](1), float64(1), int64(1), object(4)
+[2026-01-06T08:15:30.236+0000] {subprocess.py:93} INFO - memory usage: 38.4+ KB
+[2026-01-06T08:15:30.242+0000] {subprocess.py:93} INFO - None
+[2026-01-06T08:15:30.352+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-06T08:15:30.403+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-06T08:15:30.405+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=silver_cleaning, run_id=scheduled__2026-01-05T00:00:00+00:00, execution_date=20260105T000000, start_date=20260106T081528, end_date=20260106T081530
+[2026-01-06T08:15:30.420+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-06T08:15:30.421+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-06T08:15:30.421+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-06 08:15:13.163614+00:00
+[2026-01-06T08:15:30.422+0000] {logging_mixin.py:190} INFO - Task hostname:744bd50fdfac operator:BashOperator
+[2026-01-06T08:15:30.471+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-06T08:15:30.537+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-06T08:15:30.540+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2026-01-06T09:29:39.109+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-06T09:29:39.151+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [queued]>
+[2026-01-06T09:29:39.171+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [queued]>
+[2026-01-06T09:29:39.173+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-01-06T09:29:39.202+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): silver_cleaning> on 2026-01-05 00:00:00+00:00
+[2026-01-06T09:29:39.223+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=215) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-06T09:29:39.227+0000] {standard_task_runner.py:72} INFO - Started process 217 to run task
+[2026-01-06T09:29:39.228+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'silver_cleaning', 'scheduled__2026-01-05T00:00:00+00:00', '--job-id', '70', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmp12moiaao']
+[2026-01-06T09:29:39.231+0000] {standard_task_runner.py:105} INFO - Job 70: Subtask silver_cleaning
+[2026-01-06T09:29:39.494+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning scheduled__2026-01-05T00:00:00+00:00 [running]> on host 6a3940ac9286
+[2026-01-06T09:29:39.802+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='pranathi2314@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='silver_cleaning' AIRFLOW_CTX_EXECUTION_DATE='2026-01-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-05T00:00:00+00:00'
+[2026-01-06T09:29:39.809+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-06T09:29:39.813+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-06T09:29:39.815+0000] {logging_mixin.py:190} INFO - Current task name:silver_cleaning state:running start_date:2026-01-06 09:29:39.152428+00:00
+[2026-01-06T09:29:39.817+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-06T09:29:39.818+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-06T09:29:39.821+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-06T09:29:39.825+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/project/scripts/clean_transform.py']
+[2026-01-06T09:29:39.859+0000] {subprocess.py:86} INFO - Output:
+[2026-01-06T09:29:49.398+0000] {subprocess.py:93} INFO -   transaction_id  trade_date investor_id symbol action  quantity  trade_price
+[2026-01-06T09:29:49.411+0000] {subprocess.py:93} INFO - 0        TXN0001  2022-04-26      INV013   CONS    BUY        62       155.82
+[2026-01-06T09:29:49.424+0000] {subprocess.py:93} INFO - 1        TXN0002  2023-03-10      INV017   ALPH    BUY        60       193.06
+[2026-01-06T09:29:49.437+0000] {subprocess.py:93} INFO - 2        TXN0003  2023-03-07      INV113   PHRM   SELL         6       403.52
+[2026-01-06T09:29:49.442+0000] {subprocess.py:93} INFO - 3        TXN0004  2022-08-10      INV173   BNKX    BUY       102       138.69
+[2026-01-06T09:29:49.444+0000] {subprocess.py:93} INFO - 4        TXN0005  2023-04-17      INV275   BNKX   SELL        25       320.82
+[2026-01-06T09:29:49.448+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2026-01-06T09:29:49.458+0000] {subprocess.py:93} INFO - RangeIndex: 700 entries, 0 to 699
+[2026-01-06T09:29:49.462+0000] {subprocess.py:93} INFO - Data columns (total 7 columns):
+[2026-01-06T09:29:49.486+0000] {subprocess.py:93} INFO -  #   Column          Non-Null Count  Dtype
+[2026-01-06T09:29:49.505+0000] {subprocess.py:93} INFO - ---  ------          --------------  -----
+[2026-01-06T09:29:49.514+0000] {subprocess.py:93} INFO -  0   transaction_id  700 non-null    object
+[2026-01-06T09:29:49.516+0000] {subprocess.py:93} INFO -  1   trade_date      700 non-null    object
+[2026-01-06T09:29:49.518+0000] {subprocess.py:93} INFO -  2   investor_id     700 non-null    object
+[2026-01-06T09:29:49.519+0000] {subprocess.py:93} INFO -  3   symbol          700 non-null    object
+[2026-01-06T09:29:49.520+0000] {subprocess.py:93} INFO -  4   action          689 non-null    object
+[2026-01-06T09:29:49.522+0000] {subprocess.py:93} INFO -  5   quantity        700 non-null    int64
+[2026-01-06T09:29:49.523+0000] {subprocess.py:93} INFO -  6   trade_price     678 non-null    float64
+[2026-01-06T09:29:49.524+0000] {subprocess.py:93} INFO - dtypes: float64(1), int64(1), object(5)
+[2026-01-06T09:29:49.532+0000] {subprocess.py:93} INFO - memory usage: 38.4+ KB
+[2026-01-06T09:29:49.534+0000] {subprocess.py:93} INFO - None
+[2026-01-06T09:29:49.535+0000] {subprocess.py:93} INFO -   transaction_id trade_date investor_id symbol action  quantity  trade_price
+[2026-01-06T09:29:49.537+0000] {subprocess.py:93} INFO - 0        TXN0001 2022-04-26      INV013   CONS    BUY        62       155.82
+[2026-01-06T09:29:49.538+0000] {subprocess.py:93} INFO - 1        TXN0002 2023-03-10      INV017   ALPH    BUY        60       193.06
+[2026-01-06T09:29:49.538+0000] {subprocess.py:93} INFO - 2        TXN0003 2023-03-07      INV113   PHRM   SELL         6       403.52
+[2026-01-06T09:29:49.539+0000] {subprocess.py:93} INFO - 3        TXN0004 2022-08-10      INV173   BNKX    BUY       102       138.69
+[2026-01-06T09:29:49.540+0000] {subprocess.py:93} INFO - 4        TXN0005 2023-04-17      INV275   BNKX   SELL        25       320.82
+[2026-01-06T09:29:49.607+0000] {subprocess.py:93} INFO - <class 'pandas.core.frame.DataFrame'>
+[2026-01-06T09:29:49.676+0000] {subprocess.py:93} INFO - RangeIndex: 700 entries, 0 to 699
+[2026-01-06T09:29:49.713+0000] {subprocess.py:93} INFO - Data columns (total 7 columns):
+[2026-01-06T09:29:49.730+0000] {subprocess.py:93} INFO -  #   Column          Non-Null Count  Dtype
+[2026-01-06T09:29:49.734+0000] {subprocess.py:93} INFO - ---  ------          --------------  -----
+[2026-01-06T09:29:49.773+0000] {subprocess.py:93} INFO -  0   transaction_id  700 non-null    object
+[2026-01-06T09:29:49.792+0000] {subprocess.py:93} INFO -  1   trade_date      700 non-null    datetime64[ns]
+[2026-01-06T09:29:49.803+0000] {subprocess.py:93} INFO -  2   investor_id     700 non-null    object
+[2026-01-06T09:29:49.826+0000] {subprocess.py:93} INFO -  3   symbol          700 non-null    object
+[2026-01-06T09:29:49.871+0000] {subprocess.py:93} INFO -  4   action          689 non-null    object
+[2026-01-06T09:29:49.904+0000] {subprocess.py:93} INFO -  5   quantity        700 non-null    int64
+[2026-01-06T09:29:49.913+0000] {subprocess.py:93} INFO -  6   trade_price     678 non-null    float64
+[2026-01-06T09:29:49.923+0000] {subprocess.py:93} INFO - dtypes: datetime64[ns](1), float64(1), int64(1), object(4)
+[2026-01-06T09:29:49.934+0000] {subprocess.py:93} INFO - memory usage: 38.4+ KB
+[2026-01-06T09:29:49.946+0000] {subprocess.py:93} INFO - None
+[2026-01-06T09:29:49.969+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-06T09:29:50.157+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-06T09:29:50.171+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=silver_cleaning, run_id=scheduled__2026-01-05T00:00:00+00:00, execution_date=20260105T000000, start_date=20260106T092939, end_date=20260106T092950
+[2026-01-06T09:29:50.238+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-06T09:29:50.246+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-06T09:29:50.256+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-06 09:29:26.069171+00:00
+[2026-01-06T09:29:50.261+0000] {logging_mixin.py:190} INFO - Task hostname:6a3940ac9286 operator:BashOperator
+[2026-01-06T09:29:50.325+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-06T09:29:50.529+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-06T09:29:50.556+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

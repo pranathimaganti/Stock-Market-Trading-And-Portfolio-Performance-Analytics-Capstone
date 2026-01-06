@@ -1,0 +1,30 @@
+[2026-01-04T06:14:01.350+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-04T06:14:01.369+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.update_last_run_time manual__2026-01-04T06:12:20.914014+00:00 [queued]>
+[2026-01-04T06:14:01.378+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.update_last_run_time manual__2026-01-04T06:12:20.914014+00:00 [queued]>
+[2026-01-04T06:14:01.381+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2026-01-04T06:14:01.395+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): update_last_run_time> on 2026-01-04 06:12:20.914014+00:00
+[2026-01-04T06:14:01.402+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=310) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-04T06:14:01.405+0000] {standard_task_runner.py:72} INFO - Started process 312 to run task
+[2026-01-04T06:14:01.405+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'update_last_run_time', 'manual__2026-01-04T06:12:20.914014+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpdp2jacbp']
+[2026-01-04T06:14:01.406+0000] {standard_task_runner.py:105} INFO - Job 15: Subtask update_last_run_time
+[2026-01-04T06:14:01.486+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.update_last_run_time manual__2026-01-04T06:12:20.914014+00:00 [running]> on host 3409793214f1
+[2026-01-04T06:14:01.574+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='pranathi2314@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='update_last_run_time' AIRFLOW_CTX_EXECUTION_DATE='2026-01-04T06:12:20.914014+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-04T06:12:20.914014+00:00'
+[2026-01-04T06:14:01.576+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-04T06:14:01.577+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-04T06:14:01.578+0000] {logging_mixin.py:190} INFO - Current task name:update_last_run_time state:running start_date:2026-01-04 06:14:01.371272+00:00
+[2026-01-04T06:14:01.578+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-04T06:14:01.579+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-04T06:14:01.589+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2026-01-04T06:14:01.595+0000] {stock_analytics_etl_dag.py:53} INFO - Updated last successful run timestamp
+[2026-01-04T06:14:01.597+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-01-04T06:14:01.609+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-04T06:14:01.610+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=update_last_run_time, run_id=manual__2026-01-04T06:12:20.914014+00:00, execution_date=20260104T061220, start_date=20260104T061401, end_date=20260104T061401
+[2026-01-04T06:14:01.621+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-04T06:14:01.623+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-04T06:14:01.624+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-04 06:12:20.940331+00:00
+[2026-01-04T06:14:01.624+0000] {logging_mixin.py:190} INFO - Task hostname:3409793214f1 operator:PythonOperator
+[2026-01-04T06:14:01.662+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-04T06:14:01.679+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-04T06:14:01.681+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

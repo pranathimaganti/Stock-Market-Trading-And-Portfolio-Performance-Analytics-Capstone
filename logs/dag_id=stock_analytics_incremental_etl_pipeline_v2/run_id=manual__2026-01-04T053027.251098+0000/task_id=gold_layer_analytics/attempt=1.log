@@ -1,0 +1,167 @@
+[2026-01-04T05:30:42.727+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-04T05:30:42.755+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.gold_layer_analytics manual__2026-01-04T05:30:27.251098+00:00 [queued]>
+[2026-01-04T05:30:42.769+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.gold_layer_analytics manual__2026-01-04T05:30:27.251098+00:00 [queued]>
+[2026-01-04T05:30:42.770+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-01-04T05:30:42.787+0000] {taskinstance.py:2879} INFO - Executing <Task(DatabricksRunNowOperator): gold_layer_analytics> on 2026-01-04 05:30:27.251098+00:00
+[2026-01-04T05:30:42.798+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=147) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-04T05:30:42.802+0000] {standard_task_runner.py:72} INFO - Started process 149 to run task
+[2026-01-04T05:30:42.802+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'gold_layer_analytics', 'manual__2026-01-04T05:30:27.251098+00:00', '--job-id', '352', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpuq2mquwm']
+[2026-01-04T05:30:42.804+0000] {standard_task_runner.py:105} INFO - Job 352: Subtask gold_layer_analytics
+[2026-01-04T05:30:42.897+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.gold_layer_analytics manual__2026-01-04T05:30:27.251098+00:00 [running]> on host ce383388ef1b
+[2026-01-04T05:30:43.000+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='gold_layer_analytics' AIRFLOW_CTX_EXECUTION_DATE='2026-01-04T05:30:27.251098+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-04T05:30:27.251098+00:00'
+[2026-01-04T05:30:43.009+0000] {taskinstance.py:3192} ERROR - Failed when executing execute callback
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3190, in _run_execute_callback
+    callback(context)
+  File "/opt/airflow/dags/stock_analytics_etl_dag.py", line 89, in gold_on_execute
+    f"Gold layer started | Databricks job_id={context['task'].job_id} | "
+                                              ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabricksRunNowOperator' object has no attribute 'job_id'
+[2026-01-04T05:30:43.018+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-04T05:30:43.018+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-04T05:30:43.019+0000] {logging_mixin.py:190} INFO - Current task name:gold_layer_analytics state:running start_date:2026-01-04 05:30:42.756991+00:00
+[2026-01-04T05:30:43.020+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-04T05:30:43.020+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-04T05:30:43.034+0000] {base.py:84} INFO - Retrieving connection 'databricks_default'
+[2026-01-04T05:30:43.037+0000] {databricks_base.py:461} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2026-01-04T05:30:43.456+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 562, in _do_api_call
+    for attempt in self._get_retry_object():
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 572, in _do_api_call
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://adb-7405617267455896.16.azuredatabricks.net/api/2.1/jobs/run-now
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/operators/databricks.py", line 864, in execute
+    self.run_id = hook.run_now(self.json)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks.py", line 243, in run_now
+    response = self._do_api_call(RUN_NOW_ENDPOINT, json)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 579, in _do_api_call
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Response: {"error_code":"INVALID_PARAMETER_VALUE","message":"Job 68731414949023 does not exist.","details":[{"@type":"type.googleapis.com/google.rpc.RequestInfo","request_id":"e21327ad-de5f-93fb-aad2-d4eb018e8ec2","serving_data":""}]}, Status Code: 400
+[2026-01-04T05:30:43.472+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2026-01-04T05:30:43.473+0000] {logging_mixin.py:190} INFO - Task start:2026-01-04 05:30:42.756991+00:00 end:2026-01-04 05:30:43.471526+00:00 duration:0.714535
+[2026-01-04T05:30:43.474+0000] {logging_mixin.py:190} INFO - Task:<Task(DatabricksRunNowOperator): gold_layer_analytics> dag:<DAG: stock_analytics_incremental_etl_pipeline_v2> dagrun:<DagRun stock_analytics_incremental_etl_pipeline_v2 @ 2026-01-04 05:30:27.251098+00:00: manual__2026-01-04T05:30:27.251098+00:00, state:running, queued_at: 2026-01-04 05:30:27.271966+00:00. externally triggered: True>
+[2026-01-04T05:30:43.475+0000] {logging_mixin.py:190} INFO - Failure caused by Response: {"error_code":"INVALID_PARAMETER_VALUE","message":"Job 68731414949023 does not exist.","details":[{"@type":"type.googleapis.com/google.rpc.RequestInfo","request_id":"e21327ad-de5f-93fb-aad2-d4eb018e8ec2","serving_data":""}]}, Status Code: 400
+[2026-01-04T05:30:43.476+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=gold_layer_analytics, run_id=manual__2026-01-04T05:30:27.251098+00:00, execution_date=20260104T053027, start_date=20260104T053042, end_date=20260104T053043
+[2026-01-04T05:30:43.505+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-04T05:30:43.507+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 352 for task gold_layer_analytics (Response: {"error_code":"INVALID_PARAMETER_VALUE","message":"Job 68731414949023 does not exist.","details":[{"@type":"type.googleapis.com/google.rpc.RequestInfo","request_id":"e21327ad-de5f-93fb-aad2-d4eb018e8ec2","serving_data":""}]}, Status Code: 400; 149)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 562, in _do_api_call
+    for attempt in self._get_retry_object():
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 398, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+                                     ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 572, in _do_api_call
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://adb-7405617267455896.16.azuredatabricks.net/api/2.1/jobs/run-now
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/operators/databricks.py", line 864, in execute
+    self.run_id = hook.run_now(self.json)
+                  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks.py", line 243, in run_now
+    response = self._do_api_call(RUN_NOW_ENDPOINT, json)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/databricks/hooks/databricks_base.py", line 579, in _do_api_call
+    raise AirflowException(msg)
+airflow.exceptions.AirflowException: Response: {"error_code":"INVALID_PARAMETER_VALUE","message":"Job 68731414949023 does not exist.","details":[{"@type":"type.googleapis.com/google.rpc.RequestInfo","request_id":"e21327ad-de5f-93fb-aad2-d4eb018e8ec2","serving_data":""}]}, Status Code: 400
+[2026-01-04T05:30:43.541+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2026-01-04T05:30:43.568+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-01-04T05:30:43.570+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

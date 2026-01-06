@@ -1,0 +1,110 @@
+2026-01-03 09:14:47,708 | INFO | Bronze layer ingestion started
+2026-01-03 09:14:47,734 | INFO | Copied file: investor_master.csv
+2026-01-03 09:14:47,754 | INFO | Copied file: portfolio_transactions.csv
+2026-01-03 09:14:47,794 | INFO | Copied file: stock_prices.csv
+2026-01-03 09:14:47,794 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 05:06:12,113 | INFO | Bronze layer ingestion started
+2026-01-04 05:06:12,179 | INFO | Copied file: investor_master.csv
+2026-01-04 05:06:12,271 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 05:06:12,377 | INFO | Copied file: stock_prices.csv
+2026-01-04 05:06:12,380 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 05:12:23,985 | INFO | Bronze layer ingestion started
+2026-01-04 05:12:24,023 | INFO | Copied file: investor_master.csv
+2026-01-04 05:12:24,046 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 05:12:24,079 | INFO | Copied file: stock_prices.csv
+2026-01-04 05:12:24,079 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 05:20:03,629 | INFO | Bronze layer ingestion started
+2026-01-04 05:20:03,715 | INFO | Copied file: investor_master.csv
+2026-01-04 05:20:03,769 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 05:20:03,812 | INFO | Copied file: stock_prices.csv
+2026-01-04 05:20:03,813 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 05:30:34,951 | INFO | Bronze layer ingestion started
+2026-01-04 05:30:34,978 | INFO | Copied file: investor_master.csv
+2026-01-04 05:30:34,997 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 05:30:35,025 | INFO | Copied file: stock_prices.csv
+2026-01-04 05:30:35,025 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 05:49:42,463 | INFO | Bronze layer ingestion started
+2026-01-04 05:49:42,481 | INFO | Copied file: investor_master.csv
+2026-01-04 05:49:42,501 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 05:49:42,526 | INFO | Copied file: stock_prices.csv
+2026-01-04 05:49:42,527 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 06:00:36,376 | INFO | Bronze layer ingestion started
+2026-01-04 06:00:36,418 | INFO | Copied file: investor_master.csv
+2026-01-04 06:00:36,450 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 06:00:36,503 | INFO | Copied file: stock_prices.csv
+2026-01-04 06:00:36,503 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 06:00:36,820 | INFO | Bronze layer ingestion started
+2026-01-04 06:00:36,994 | INFO | Copied file: investor_master.csv
+2026-01-04 06:00:37,113 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 06:00:37,236 | INFO | Copied file: stock_prices.csv
+2026-01-04 06:00:37,238 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 06:05:29,210 | INFO | Bronze layer ingestion started
+2026-01-04 06:05:29,236 | INFO | Bronze layer ingestion started
+2026-01-04 06:05:29,237 | INFO | Copied file: investor_master.csv
+2026-01-04 06:05:29,257 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 06:05:29,261 | INFO | Copied file: investor_master.csv
+2026-01-04 06:05:29,285 | INFO | Copied file: stock_prices.csv
+2026-01-04 06:05:29,286 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 06:05:29,300 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 06:05:29,342 | INFO | Copied file: stock_prices.csv
+2026-01-04 06:05:29,343 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 06:12:25,814 | INFO | Bronze layer ingestion started
+2026-01-04 06:12:25,881 | INFO | Copied file: investor_master.csv
+2026-01-04 06:12:25,961 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 06:12:26,063 | INFO | Copied file: stock_prices.csv
+2026-01-04 06:12:26,063 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 06:18:46,785 | INFO | Bronze layer ingestion started
+2026-01-04 06:18:46,807 | INFO | Copied file: investor_master.csv
+2026-01-04 06:18:46,834 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 06:18:46,884 | INFO | Bronze layer ingestion started
+2026-01-04 06:18:46,886 | INFO | Copied file: stock_prices.csv
+2026-01-04 06:18:46,886 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-04 06:18:46,917 | INFO | Copied file: investor_master.csv
+2026-01-04 06:18:46,938 | INFO | Copied file: portfolio_transactions.csv
+2026-01-04 06:18:46,976 | INFO | Copied file: stock_prices.csv
+2026-01-04 06:18:46,977 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-05 17:17:59,676 | INFO | Bronze layer ingestion started
+2026-01-05 17:17:59,751 | INFO | Copied file: investor_master.csv
+2026-01-05 17:17:59,843 | INFO | Copied file: portfolio_transactions.csv
+2026-01-05 17:17:59,956 | INFO | Copied file: stock_prices.csv
+2026-01-05 17:17:59,957 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-05 17:19:09,792 | INFO | Bronze layer ingestion started
+2026-01-05 17:19:09,825 | INFO | Copied file: investor_master.csv
+2026-01-05 17:19:09,848 | INFO | Copied file: portfolio_transactions.csv
+2026-01-05 17:19:09,892 | INFO | Copied file: stock_prices.csv
+2026-01-05 17:19:09,893 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-06 06:26:42,658 | INFO | Bronze layer ingestion started
+2026-01-06 06:26:42,730 | INFO | Copied file: investor_master.csv
+2026-01-06 06:26:42,833 | INFO | Copied file: portfolio_transactions.csv
+2026-01-06 06:26:42,976 | INFO | Copied file: stock_prices.csv
+2026-01-06 06:26:42,976 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-06 06:28:19,108 | INFO | Bronze layer ingestion started
+2026-01-06 06:28:19,136 | INFO | Copied file: investor_master.csv
+2026-01-06 06:28:19,159 | INFO | Copied file: portfolio_transactions.csv
+2026-01-06 06:28:19,193 | INFO | Copied file: stock_prices.csv
+2026-01-06 06:28:19,193 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-06 06:37:17,108 | INFO | Bronze layer ingestion started
+2026-01-06 06:37:17,149 | INFO | Copied file: investor_master.csv
+2026-01-06 06:37:17,220 | INFO | Copied file: portfolio_transactions.csv
+2026-01-06 06:37:17,325 | INFO | Copied file: stock_prices.csv
+2026-01-06 06:37:17,327 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-06 08:15:23,395 | INFO | Bronze layer ingestion started
+2026-01-06 08:15:23,435 | INFO | Copied file: investor_master.csv
+2026-01-06 08:15:23,467 | INFO | Copied file: portfolio_transactions.csv
+2026-01-06 08:15:23,518 | INFO | Copied file: stock_prices.csv
+2026-01-06 08:15:23,519 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-06 08:24:51,131 | INFO | Bronze layer ingestion started
+2026-01-06 08:24:51,162 | INFO | Copied file: investor_master.csv
+2026-01-06 08:24:51,183 | INFO | Copied file: portfolio_transactions.csv
+2026-01-06 08:24:51,225 | INFO | Copied file: stock_prices.csv
+2026-01-06 08:24:51,225 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-06 09:27:07,876 | INFO | Bronze layer ingestion started
+2026-01-06 09:27:07,914 | INFO | Copied file: investor_master.csv
+2026-01-06 09:27:07,945 | INFO | Copied file: portfolio_transactions.csv
+2026-01-06 09:27:07,995 | INFO | Copied file: stock_prices.csv
+2026-01-06 09:27:07,996 | INFO | Bronze layer completed successfully. Files copied: 3
+2026-01-06 09:29:32,446 | INFO | Bronze layer ingestion started
+2026-01-06 09:29:32,507 | INFO | Copied file: investor_master.csv
+2026-01-06 09:29:32,581 | INFO | Copied file: portfolio_transactions.csv
+2026-01-06 09:29:32,906 | INFO | Copied file: stock_prices.csv
+2026-01-06 09:29:32,907 | INFO | Bronze layer completed successfully. Files copied: 3

@@ -1,0 +1,29 @@
+[2026-01-05T17:17:53.777+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-05T17:17:53.811+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.check_incremental_data scheduled__2026-01-04T00:00:00+00:00 [queued]>
+[2026-01-05T17:17:53.829+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.check_incremental_data scheduled__2026-01-04T00:00:00+00:00 [queued]>
+[2026-01-05T17:17:53.831+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-01-05T17:17:53.860+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): check_incremental_data> on 2026-01-04 00:00:00+00:00
+[2026-01-05T17:17:53.878+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=112) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-05T17:17:53.882+0000] {standard_task_runner.py:72} INFO - Started process 114 to run task
+[2026-01-05T17:17:53.882+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'check_incremental_data', 'scheduled__2026-01-04T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpwr1vqi3g']
+[2026-01-05T17:17:53.884+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask check_incremental_data
+[2026-01-05T17:17:54.049+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.check_incremental_data scheduled__2026-01-04T00:00:00+00:00 [running]> on host f557928c3fb2
+[2026-01-05T17:17:54.358+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='pranathi2314@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='check_incremental_data' AIRFLOW_CTX_EXECUTION_DATE='2026-01-04T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-01-04T00:00:00+00:00'
+[2026-01-05T17:17:54.364+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-05T17:17:54.366+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-05T17:17:54.367+0000] {logging_mixin.py:190} INFO - Current task name:check_incremental_data state:running start_date:2026-01-05 17:17:53.813344+00:00
+[2026-01-05T17:17:54.368+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-05T17:17:54.369+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-05T17:17:54.415+0000] {stock_analytics_etl_dag.py:43} INFO - No new data detected.
+[2026-01-05T17:17:54.416+0000] {python.py:240} INFO - Done. Returned value was: None
+[2026-01-05T17:17:54.441+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-05T17:17:54.442+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=check_incremental_data, run_id=scheduled__2026-01-04T00:00:00+00:00, execution_date=20260104T000000, start_date=20260105T171753, end_date=20260105T171754
+[2026-01-05T17:17:54.469+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-05T17:17:54.473+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-05T17:17:54.474+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-05 17:17:42.620686+00:00
+[2026-01-05T17:17:54.475+0000] {logging_mixin.py:190} INFO - Task hostname:f557928c3fb2 operator:PythonOperator
+[2026-01-05T17:17:54.508+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-05T17:17:54.579+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-05T17:17:54.583+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

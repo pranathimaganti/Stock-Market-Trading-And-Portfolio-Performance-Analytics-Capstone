@@ -1,0 +1,31 @@
+[2026-01-04T05:20:07.030+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-04T05:20:07.048+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning manual__2026-01-04T05:19:56.409481+00:00 [queued]>
+[2026-01-04T05:20:07.058+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning manual__2026-01-04T05:19:56.409481+00:00 [queued]>
+[2026-01-04T05:20:07.060+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-01-04T05:20:07.076+0000] {taskinstance.py:2879} INFO - Executing <Task(BashOperator): silver_cleaning> on 2026-01-04 05:19:56.409481+00:00
+[2026-01-04T05:20:07.085+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=143) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-04T05:20:07.087+0000] {standard_task_runner.py:72} INFO - Started process 145 to run task
+[2026-01-04T05:20:07.087+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'silver_cleaning', 'manual__2026-01-04T05:19:56.409481+00:00', '--job-id', '342', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpddl2huyc']
+[2026-01-04T05:20:07.089+0000] {standard_task_runner.py:105} INFO - Job 342: Subtask silver_cleaning
+[2026-01-04T05:20:07.168+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.silver_cleaning manual__2026-01-04T05:19:56.409481+00:00 [running]> on host ddc54e64aef0
+[2026-01-04T05:20:07.295+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='silver_cleaning' AIRFLOW_CTX_EXECUTION_DATE='2026-01-04T05:19:56.409481+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-04T05:19:56.409481+00:00'
+[2026-01-04T05:20:07.297+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-04T05:20:07.298+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-04T05:20:07.299+0000] {logging_mixin.py:190} INFO - Current task name:silver_cleaning state:running start_date:2026-01-04 05:20:07.048952+00:00
+[2026-01-04T05:20:07.300+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-04T05:20:07.301+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-04T05:20:07.302+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2026-01-04T05:20:07.304+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/project/scripts/clean_transform.py']
+[2026-01-04T05:20:07.319+0000] {subprocess.py:86} INFO - Output:
+[2026-01-04T05:20:09.017+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2026-01-04T05:20:09.051+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-04T05:20:09.052+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=silver_cleaning, run_id=manual__2026-01-04T05:19:56.409481+00:00, execution_date=20260104T051956, start_date=20260104T052007, end_date=20260104T052009
+[2026-01-04T05:20:09.065+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-04T05:20:09.066+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-04T05:20:09.067+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-04 05:19:56.443305+00:00
+[2026-01-04T05:20:09.067+0000] {logging_mixin.py:190} INFO - Task hostname:ddc54e64aef0 operator:BashOperator
+[2026-01-04T05:20:09.078+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-04T05:20:09.113+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-04T05:20:09.123+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

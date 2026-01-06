@@ -1,0 +1,63 @@
+[2026-01-06T06:37:29.864+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2026-01-06T06:37:29.884+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.gold_layer_analytics manual__2026-01-06T06:37:01.993033+00:00 [queued]>
+[2026-01-06T06:37:29.895+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_analytics_incremental_etl_pipeline_v2.gold_layer_analytics manual__2026-01-06T06:37:01.993033+00:00 [queued]>
+[2026-01-06T06:37:29.896+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 3
+[2026-01-06T06:37:29.913+0000] {taskinstance.py:2879} INFO - Executing <Task(DatabricksRunNowOperator): gold_layer_analytics> on 2026-01-06 06:37:01.993033+00:00
+[2026-01-06T06:37:29.922+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=154) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-01-06T06:37:29.925+0000] {standard_task_runner.py:72} INFO - Started process 156 to run task
+[2026-01-06T06:37:29.924+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'stock_analytics_incremental_etl_pipeline_v2', 'gold_layer_analytics', 'manual__2026-01-06T06:37:01.993033+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/stock_analytics_etl_dag.py', '--cfg-path', '/tmp/tmpc8765lqi']
+[2026-01-06T06:37:29.926+0000] {standard_task_runner.py:105} INFO - Job 44: Subtask gold_layer_analytics
+[2026-01-06T06:37:30.009+0000] {task_command.py:467} INFO - Running <TaskInstance: stock_analytics_incremental_etl_pipeline_v2.gold_layer_analytics manual__2026-01-06T06:37:01.993033+00:00 [running]> on host 0d2b48f15c40
+[2026-01-06T06:37:30.145+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='pranathi2314@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='stock_analytics_incremental_etl_pipeline_v2' AIRFLOW_CTX_TASK_ID='gold_layer_analytics' AIRFLOW_CTX_EXECUTION_DATE='2026-01-06T06:37:01.993033+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-01-06T06:37:01.993033+00:00'
+[2026-01-06T06:37:30.147+0000] {taskinstance.py:3192} ERROR - Failed when executing execute callback
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3190, in _run_execute_callback
+    callback(context)
+  File "/opt/airflow/dags/stock_analytics_etl_dag.py", line 58, in gold_on_execute
+    f"Databricks job_id={context['task'].job_id} | "
+                         ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabricksRunNowOperator' object has no attribute 'job_id'
+[2026-01-06T06:37:30.155+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2026-01-06T06:37:30.155+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2026-01-06T06:37:30.156+0000] {logging_mixin.py:190} INFO - Current task name:gold_layer_analytics state:running start_date:2026-01-06 06:37:29.885849+00:00
+[2026-01-06T06:37:30.157+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 and current dag run status:running
+[2026-01-06T06:37:30.157+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2026-01-06T06:37:30.174+0000] {base.py:84} INFO - Retrieving connection 'databricks_default'
+[2026-01-06T06:37:30.176+0000] {databricks_base.py:461} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2026-01-06T06:37:30.933+0000] {databricks.py:66} INFO - Run submitted with run_id: 323960636455355
+[2026-01-06T06:37:30.935+0000] {databricks_base.py:461} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2026-01-06T06:37:31.157+0000] {databricks_base.py:461} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2026-01-06T06:37:31.330+0000] {databricks.py:118} INFO - gold_layer_analytics in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-06T06:37:31.331+0000] {databricks.py:119} INFO - View run status, Spark UI, and logs at https://adb-7405617267455896.16.azuredatabricks.net/?o=7405617267455896#job/68731414949078/run/323960636455355
+[2026-01-06T06:37:31.332+0000] {databricks.py:120} INFO - Sleeping for 30 seconds.
+[2026-01-06T06:38:01.329+0000] {databricks_base.py:461} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2026-01-06T06:38:01.525+0000] {databricks.py:118} INFO - gold_layer_analytics in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-06T06:38:01.526+0000] {databricks.py:119} INFO - View run status, Spark UI, and logs at https://adb-7405617267455896.16.azuredatabricks.net/?o=7405617267455896#job/68731414949078/run/323960636455355
+[2026-01-06T06:38:01.527+0000] {databricks.py:120} INFO - Sleeping for 30 seconds.
+[2026-01-06T06:38:31.525+0000] {databricks_base.py:461} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2026-01-06T06:38:31.754+0000] {databricks.py:118} INFO - gold_layer_analytics in run state: {'life_cycle_state': 'RUNNING', 'result_state': '', 'state_message': ''}
+[2026-01-06T06:38:31.755+0000] {databricks.py:119} INFO - View run status, Spark UI, and logs at https://adb-7405617267455896.16.azuredatabricks.net/?o=7405617267455896#job/68731414949078/run/323960636455355
+[2026-01-06T06:38:31.756+0000] {databricks.py:120} INFO - Sleeping for 30 seconds.
+[2026-01-06T06:39:01.753+0000] {databricks_base.py:461} INFO - Using token auth. For security reasons, please set token in Password field instead of extra
+[2026-01-06T06:39:01.988+0000] {databricks.py:77} INFO - gold_layer_analytics completed successfully.
+[2026-01-06T06:39:01.989+0000] {databricks.py:78} INFO - View run status, Spark UI, and logs at https://adb-7405617267455896.16.azuredatabricks.net/?o=7405617267455896#job/68731414949078/run/323960636455355
+[2026-01-06T06:39:02.006+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2026-01-06T06:39:02.007+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=stock_analytics_incremental_etl_pipeline_v2, task_id=gold_layer_analytics, run_id=manual__2026-01-06T06:37:01.993033+00:00, execution_date=20260106T063701, start_date=20260106T063729, end_date=20260106T063902
+[2026-01-06T06:39:02.008+0000] {taskinstance.py:1554} INFO - Executing gold_on_success callback
+[2026-01-06T06:39:02.009+0000] {taskinstance.py:1558} ERROR - Error when executing gold_on_success callback
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 1556, in _run_finished_callback
+    callback(context)
+  File "/opt/airflow/dags/stock_analytics_etl_dag.py", line 65, in gold_on_success
+    f"Databricks job_id={context['task'].job_id} | "
+                         ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatabricksRunNowOperator' object has no attribute 'job_id'
+[2026-01-06T06:39:02.026+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2026-01-06T06:39:02.028+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2026-01-06T06:39:02.029+0000] {logging_mixin.py:190} INFO - Dag name:stock_analytics_incremental_etl_pipeline_v2 queued_at:2026-01-06 06:37:02.016335+00:00
+[2026-01-06T06:39:02.029+0000] {logging_mixin.py:190} INFO - Task hostname:0d2b48f15c40 operator:DatabricksRunNowOperator
+[2026-01-06T06:39:02.079+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2026-01-06T06:39:02.101+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-01-06T06:39:02.103+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
