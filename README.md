@@ -91,21 +91,22 @@ STOCK-ANALYTICS-PLATFORM
 │       ├── portfolio_transactions_clean.csv
 │       └── stock_prices_clean.csv
 │
-├── Documentation/
-│
-├── logs/
-│   ├── dag_id=stock_analytics_incremental_etl_pipeline_v2/
-│   ├── dag_processor_manager/
-│   ├── scheduler/
-│   ├── bronze.log
-│   └── silver_layer.log
+├── scripts/
+│   └── clean_transform.py
 │
 ├── notebooks/
 │   └── gold_layer_analytics.ipynb
 │
+├── logs/
+│   ├── bronze.log
+│   └── silver.log
+│
+├── Documentation/
+│
 ├── PowerBI/
 │
 └── README.md
+
 ```
 
 Three raw CSV datasets representing realistic stock market data.
