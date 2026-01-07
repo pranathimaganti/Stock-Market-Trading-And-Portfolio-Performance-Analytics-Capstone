@@ -37,6 +37,7 @@ Financial organizations deal with continuously changing stock market data. Manua
 ---
 
 ## 3. High-Level Architecture
+```
 Raw CSV Files
 ↓
 Apache Airflow (Orchestration)
@@ -48,7 +49,7 @@ Silver Layer (Cleaned & Transformed Data)
 Gold Layer (Business Analytics – Delta Tables)
 ↓
 Power BI Dashboards
-
+```
 
 ---
 
@@ -63,7 +64,49 @@ Power BI Dashboards
 
 ---
 
-## 5. Initial Datasets Used
+## 5. Directory Structure and Initial Datasets Used
+```
+STOCK-ANALYTICS-PLATFORM
+│
+├── Airflow/
+│   └── dags/
+│       └── stock_analytics_etl_dag.py
+│
+├── Airflow_Outputs/
+│
+├── Data/
+│   ├── raw/
+│   │   ├── investor_master.csv
+│   │   ├── portfolio_transactions.csv
+│   │   └── stock_prices.csv
+│   │
+│   ├── Bronze/
+│   │   ├── bronze_layer.py
+│   │   ├── investor_master.csv
+│   │   ├── portfolio_transactions.csv
+│   │   └── stock_prices.csv
+│   │
+│   └── processed/
+│       ├── investor_master_clean.csv
+│       ├── portfolio_transactions_clean.csv
+│       └── stock_prices_clean.csv
+│
+├── Documentation/
+│
+├── logs/
+│   ├── dag_id=stock_analytics_incremental_etl_pipeline_v2/
+│   ├── dag_processor_manager/
+│   ├── scheduler/
+│   ├── bronze.log
+│   └── silver_layer.log
+│
+├── notebooks/
+│   └── gold_layer_analytics.ipynb
+│
+├── PowerBI/
+│
+└── README.md
+```
 
 Three raw CSV datasets representing realistic stock market data.
 
@@ -124,10 +167,7 @@ This dataset contains **investor demographic and risk-related information**, ena
 
 **Objective:** Preserve original data exactly as received.
 
-### Characteristics:
-- No transformations
-- Full traceability
-- Recovery-ready
+- Characteristics: No transformations, Full traceability, Recovery-ready
 
 ### Implementation:
 - Python ingestion script
@@ -139,11 +179,7 @@ This dataset contains **investor demographic and risk-related information**, ena
 ## 7. Silver Layer – Data Cleaning & Transformation
 
 **Objective:** Improve data quality and prepare for analytics.
-
-### Cleaning Steps:
-- Remove null values
-- Remove duplicate records
-- Normalize data types
+- Cleaning : Remove null values, Remove duplicate records, Normalize data types
 
 ### Feature Engineering:
 **Daily Return**
@@ -206,13 +242,6 @@ Portfolio Value (Date) = Σ (Quantity × Trade Price)
 | `trade_date` | Trading date |
 | `portfolio_value` | Total portfolio value for the date |
 
-#### Business Purpose
-
-- Portfolio trend analysis
-- Used in Power BI to derive:
-  - Total Portfolio Value
-  - Average Portfolio Value
-  - Portfolio Momentum indicators
 
 ---
 
@@ -237,12 +266,6 @@ IF volatility > 0.02 → High Volatility
 | `volatility` | Standard deviation of returns |
 | `volatility_range` | Risk category |
 
-#### Business Purpose
-
-- Identifies high-risk stocks
-- Supports volatility heatmaps and risk dashboards
-- Enables quick stock-level risk assessment
-
 ---
 
 ### 3. `gold_risk_adjusted_returns`
@@ -263,12 +286,6 @@ Risk Adjusted Return = Average Daily Return / Volatility
 | `avg_daily_return` | Average daily return |
 | `volatility` | Stock volatility |
 | `risk_adjusted_return` | Return per unit of risk |
-
-#### Business Purpose
-
-- Identifies high-return, low-risk stocks
-- Supports risk vs return scatter plots
-- Enables stock performance ranking
 
 ---
 
@@ -291,12 +308,6 @@ Average Close Price = AVG(Close Price)
 | `sector` | Business sector |
 | `total_volume` | Total trading volume |
 | `avg_close_price` | Average closing price |
-
-#### Business Purpose
-
-- Identifies dominant market sectors
-- Enables sector-wise comparison
-- Supports treemaps, pie charts, and bar charts
 
 ---
 
@@ -322,12 +333,6 @@ IF trade_count > 6 → Frequent Trader
 | `trade_count` | Number of trades |
 | `trading_behavior` | Investor classification |
 | `region` | Geographic region |
-
-#### Business Purpose
-
-- Identifies investor risk appetite
-- Enables behavioral segmentation
-- Links trading frequency with portfolio risk exposure
 
 ---
 
@@ -420,18 +425,9 @@ Robust monitoring, logging, and error handling mechanisms are implemented across
 
 ### Application-Level Logging
 Separate application logs are implemented for each ETL layer:
-
-- **Bronze Layer Logging**
-  - Logs ingestion start, file copy operations, and completion status.
-
-
-- **Silver Layer Logging**
-  - Logs data cleaning steps, transformations, and feature engineering actions.
-
-
-- **Gold Layer Logging**
-  - Execution status is tracked through Airflow task logs.
-
+- Bronze Layer Logging : Logs ingestion start, file copy operations, and completion status.
+- Silver Layer Logging : Logs data cleaning steps, transformations, and feature engineering actions.
+- Gold Layer Logging : Execution status is tracked through Airflow task logs.
 
 ### Centralized Log Storage
 - Airflow logs are written to `/opt/airflow/logs` inside the container.
@@ -441,7 +437,7 @@ Separate application logs are implemented for each ETL layer:
 ### Error Visibility
 - All exceptions are logged with full stack traces.
 - Task failures are immediately visible in the Airflow UI.
-- Databricks job failures propagate back to Airflow, ensuring end-to-end failure awareness.
+
 ---
 
 # 11. Power BI Integration
@@ -456,7 +452,6 @@ Power BI is connected to Azure Databricks using the native **Databricks connecto
 - Connected via **Power BI Desktop → Get Data → Azure Databricks**
 
 Before visualization, data was cleaned and prepared using **Power Query**:
-- Removed null portfolio values to ensure accurate trend analysis
 - Corrected data types (e.g., `total_volume` converted from Decimal to Whole Number)
 - Created conditional columns:
   - **Performance Category** (Good / Poor) based on risk-adjusted returns
@@ -476,7 +471,6 @@ Custom DAX measures were implemented to support analytical insights, including:
 - Risk Efficiency Score
 - Portfolio Momentum Index
 - Average Trading Intensity
-- Investor Ranking by Trade Count
 
 ---
 
@@ -504,12 +498,10 @@ This dashboard provides a **comprehensive risk perspective**, analyzing volatili
   - Example: **Risk Efficiency Score alert**
   - Triggered when value drops below **0.5**
   - Notifications sent via **email and Teams**
-- No on-premises gateway was required due to cloud-native Databricks integration
-
 ---
 
 
-## 12. Refresh Behaviour (Desktop & Service)
+## 12. Refresh Behaviour (PowerBI Desktop & PowerBI Service)
 
 **Power BI Desktop Refresh:**
 - Used during development to validate schema changes and new data
